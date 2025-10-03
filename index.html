@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>News Article Aggregator</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 40px;
+      text-align: center;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    h1 {
+      font-weight: 700;
+      color: #2c3e50;
+      margin-bottom: 30px;
+    }
+
+    button {
+      background-color: #3498db;
+      border: none;
+      color: white;
+      padding: 12px 25px;
+      margin: 8px 6px;
+      font-size: 16px;
+      font-weight: 600;
+      border-radius: 6px;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(52, 152, 219, 0.3);
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      display: inline-block;
+    }
+
+    button:hover {
+      background-color: #2980b9;
+      box-shadow: 0 6px 10px rgba(41, 128, 185, 0.5);
+    }
+
+    #output {
+      margin-top: 30px;
+      white-space: pre-wrap;
+      text-align: center;
+      font-size: 18px;
+      line-height: 1.6;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      background: white;
+      padding: 20px 30px;
+      border-radius: 10px;
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+      color: #2c3e50;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>News Article Aggregator</h1>
+
+  <button onclick="showTotalViews()">Show Total Views</button>
+  <button onclick="showArticlesByCategory('Tech')">Filter Tech Articles</button>
+  <button onclick="showMostViewedArticle()">Show Most Viewed Article</button>
+  <button onclick="showArticlesGroupedByAuthor()">Group Articles By Author</button>
+  <button onclick="fetchNewArticles()">Fetch New Articles (Async)</button>
+
+  <div id="output">Click a button to see results here.</div>
+
+  <script src="script.js"></script>
+</body>
+</html>

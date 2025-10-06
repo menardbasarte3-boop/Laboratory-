@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+  background: #101728;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.resume {
+  background: white;
+  width: 800px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== Header ===== */
+.header {
+  background: #253b80;
+  color: white;
+  text-align: center;
+  padding: 40px 20px 60px;
+  position: relative;
+}
+
+.header img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 5px solid white;
+  object-fit: cover;
+  position: absolute;
+  left: 50%;
+  bottom: -60px;
+  transform: translateX(-50%);
+  background: white;
+}
+
+.header h1 {
+  font-size: 28px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.header h2 {
+  font-size: 15px;
+  color: #ddd;
+  font-weight: normal;
+}
+
+.contact {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-size: 14px;
+  color: #eee;
+}
+
+.contact p {
+  margin: 5px 10px;
+}
+
+/* ===== Main ===== */
+.main {
+  display: flex;
+  padding: 30px 20px;
+  gap: 30px;
+}
+
+.left, .right {
+  flex: 1;
+}
+
+/* ===== Sections ===== */
+.section {
+  margin-bottom: 25px;
+}
+
+.section h3 {
+  color: #253b80;
+  font-size: 18px;
+  border-bottom: 2px solid #253b80;
+  display: inline-block;
+  margin-bottom: 10px;
+  padding-bottom: 2px;
+}
+
+.section p {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* ===== Lists ===== */
+ul {
+  list-style: none;
+  padding-left: 15px;
+}
+
+ul li::before {
+  content: "• ";
+  color: #253b80;
+  margin-right: 5px;
+}
+
+/* ===== Skills ===== */
+.skill {
+  margin-bottom: 15px;
+}
+
+.skill span {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.progress {
+  background: #e0e0e0;
+  height: 8px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.progress-bar {
+  height: 100%;
+  background: #253b80;
+}
+
+/* ===== Job & Education ===== */
+.job, .edu {
+  margin-bottom: 20px;
+}
+
+.job h4, .edu h4 {
+  font-size: 15px;
+  font-weight: bold;
+  color: #000;
+}
+
+.job span, .edu span {
+  font-size: 13px;
+  color: #555;
+  display: block;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Todo List with Custom Time</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📝 Todo List</h1>
+
+    <form id="todo-form">
+      <input type="text" id="todo-input" placeholder="Enter a new task..." required />
+      <input type="time" id="time-input" required />
+      <button type="submit">Add</button>
+    </form>
+
+    <label for="todo-dropdown">Select a task:</label>
+    <select id="todo-dropdown">
+      <option disabled selected>-- Choose a task --</option>
+    </select>
+
+    <ul id="todo-list"></ul>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

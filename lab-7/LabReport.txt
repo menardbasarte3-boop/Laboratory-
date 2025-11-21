@@ -1,0 +1,35 @@
+POST Endpoint
+URL: http://localhost:8080/api/products
+Method: POST
+Body (JSON example):
+{
+"name": "Tablet",
+"price": 11000.00
+}
+Expected Status: 201 Created
+GET by ID
+I
+URL: http://localhost:8080/api/products/1
+Method: GET
+Expected Status: 200 OK
+Example Response:
+{
+"id": 1,
+"name": "Cellphone",
+"price": 7000.00
+}
+GET by ID (non-existent product)
+URL: http://localhost:8080/api/products/999 Method: GET
+Expected Status: 404 Not Found
+PUT Endpoint
+URL: http://localhost:8080/api/products/1 Method: PUT
+Body (JSON example):
+{
+"name": "Earphone",
+"price": 1000.00
+}
+Expected Status: 200 OK
+Delete Endpoint URL: http://localhost:8080/api/products/1
+Method: DELETE Expected Status: 200 OK
+
+localhost
